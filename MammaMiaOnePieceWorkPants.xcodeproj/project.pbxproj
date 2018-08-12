@@ -8,20 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		DD741406211D7F8E006AA919 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD741405211D7F8E006AA919 /* AppDelegate.swift */; };
-		DD741408211D7F8E006AA919 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD741407211D7F8E006AA919 /* ViewController.swift */; };
 		DD74140B211D7F8E006AA919 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD741409211D7F8E006AA919 /* Main.storyboard */; };
 		DD74140D211D7F8F006AA919 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD74140C211D7F8F006AA919 /* Assets.xcassets */; };
 		DD741410211D7F8F006AA919 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD74140E211D7F8F006AA919 /* LaunchScreen.storyboard */; };
+		DDD9ABC5211FA87200700116 /* changeColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD9ABC4211FA87200700116 /* changeColorViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DD741402211D7F8E006AA919 /* MammaMiaOnePieceWorkPants.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MammaMiaOnePieceWorkPants.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD741405211D7F8E006AA919 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DD741407211D7F8E006AA919 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DD74140A211D7F8E006AA919 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DD74140C211D7F8F006AA919 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD74140F211D7F8F006AA919 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD741411211D7F8F006AA919 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDD9ABC4211FA87200700116 /* changeColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = changeColorViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +54,8 @@
 		DD741404211D7F8E006AA919 /* MammaMiaOnePieceWorkPants */ = {
 			isa = PBXGroup;
 			children = (
+				DDD9ABC4211FA87200700116 /* changeColorViewController.swift */,
 				DD741405211D7F8E006AA919 /* AppDelegate.swift */,
-				DD741407211D7F8E006AA919 /* ViewController.swift */,
 				DD741409211D7F8E006AA919 /* Main.storyboard */,
 				DD74140C211D7F8F006AA919 /* Assets.xcassets */,
 				DD74140E211D7F8F006AA919 /* LaunchScreen.storyboard */,
@@ -135,8 +135,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD741408211D7F8E006AA919 /* ViewController.swift in Sources */,
 				DD741406211D7F8E006AA919 /* AppDelegate.swift in Sources */,
+				DDD9ABC5211FA87200700116 /* changeColorViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
