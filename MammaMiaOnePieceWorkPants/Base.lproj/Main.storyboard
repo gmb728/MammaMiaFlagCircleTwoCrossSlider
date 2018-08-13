@@ -18,12 +18,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pattern" translatesAutoresizingMaskIntoConstraints="NO" id="y5U-HW-M8S">
-                                <rect key="frame" x="-31" y="98" width="339" height="314"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y5U-HW-M8S">
+                                <rect key="frame" x="153" y="198" width="150" height="224"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="donna" translatesAutoresizingMaskIntoConstraints="NO" id="tT6-3B-KvN">
-                                <rect key="frame" x="0.0" y="35" width="414" height="377"/>
+                                <rect key="frame" x="0.0" y="45" width="414" height="377"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="ajY-Cn-yy7">
@@ -80,6 +81,10 @@
                                     <action selector="colorSliderChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="0x4-uV-B4j"/>
                                 </connections>
                             </slider>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WxY-pm-OrQ">
+                                <rect key="frame" x="186" y="344" width="88" height="78"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -87,6 +92,7 @@
                     <connections>
                         <outlet property="blueLabel" destination="OFu-cJ-Djn" id="4bE-vg-rtf"/>
                         <outlet property="blueSlider" destination="7md-0x-HBf" id="h7j-4J-31G"/>
+                        <outlet property="crossImageView" destination="WxY-pm-OrQ" id="pWZ-Hy-NBx"/>
                         <outlet property="donnaImageView" destination="tT6-3B-KvN" id="stN-Jy-fr3"/>
                         <outlet property="greenLabel" destination="aBG-FT-v5d" id="5vN-Go-VnX"/>
                         <outlet property="greenSlider" destination="Ezs-xQ-O8Y" id="ecn-oS-KMv"/>
@@ -97,11 +103,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-486.95652173913049" y="-149.18478260869566"/>
+            <point key="canvasLocation" x="-1330.4347826086957" y="-366.84782608695656"/>
         </scene>
     </scenes>
     <resources>
         <image name="donna" width="1200" height="800"/>
-        <image name="pattern" width="1808" height="1919"/>
     </resources>
 </document>
