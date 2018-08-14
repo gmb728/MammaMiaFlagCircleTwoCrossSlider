@@ -82,7 +82,7 @@
                                 </connections>
                             </slider>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WxY-pm-OrQ">
-                                <rect key="frame" x="186" y="344" width="88" height="78"/>
+                                <rect key="frame" x="184" y="344" width="88" height="78"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -92,7 +92,7 @@
                     <connections>
                         <outlet property="blueLabel" destination="OFu-cJ-Djn" id="4bE-vg-rtf"/>
                         <outlet property="blueSlider" destination="7md-0x-HBf" id="h7j-4J-31G"/>
-                        <outlet property="crossImageView" destination="WxY-pm-OrQ" id="pWZ-Hy-NBx"/>
+                        <outlet property="cross" destination="WxY-pm-OrQ" id="j8U-IQ-7qG"/>
                         <outlet property="donnaImageView" destination="tT6-3B-KvN" id="stN-Jy-fr3"/>
                         <outlet property="greenLabel" destination="aBG-FT-v5d" id="5vN-Go-VnX"/>
                         <outlet property="greenSlider" destination="Ezs-xQ-O8Y" id="ecn-oS-KMv"/>
@@ -103,7 +103,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1330.4347826086957" y="-366.84782608695656"/>
+            <point key="canvasLocation" x="-1745" y="-378"/>
         </scene>
     </scenes>
     <resources>
