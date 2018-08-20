@@ -57,31 +57,67 @@ class changeColorViewController: UIViewController {
    
     
     @IBAction func colorSliderChange(_ sender: UISlider) {
-        var pattern = CGRect(x: 153, y: 197, width: 160, height: 225)
-        patternImageView.backgroundColor = UIColor(red: 1, green: 1, blue:1, alpha: 1)
+        var pattern = CGRect(x: 153, y: 197, width: 155, height: 225)
+        patternImageView.backgroundColor = UIColor(red: 225, green: 255, blue:255, alpha: 1)
             pattern = CGRect(x: 0, y: 0, width: patternImageView.frame.width, height: patternImageView.frame.height)
-       
-        let cross = CGRect(x:35, y:165, width:96, height:65)
+        let cross = CGRect(x:35, y:165, width:100, height:68)
         let crossBackgroundView = UIView(frame: cross)
-        crossBackgroundView.backgroundColor = UIColor(red:254/255, green:204/255, blue:0, alpha:1)
-        let leftUp = CGRect(x:0, y:0, width:33, height:21)
+        crossBackgroundView.backgroundColor = UIColor(red:220/225, green:30/225, blue:53/255, alpha:1)
+       
+        //leftUp1
+        let leftUp1 = CGRect(x:0, y:0, width:crossBackgroundView.frame.width/22*7, height:crossBackgroundView.frame.height/16*7)
+        let leftUp1BackgroundView = UIView(frame:leftUp1)
+        leftUp1BackgroundView.backgroundColor = UIColor(red: 1, green: 1, blue:1, alpha: 1)
+        //leftDown1
+        let leftDown1 = CGRect(x:0, y:crossBackgroundView.frame.height/16*9, width:crossBackgroundView.frame.width/22*7, height:crossBackgroundView.frame.height/16*7)
+        let leftDown1BackgroundView = UIView(frame:leftDown1)
+        leftDown1BackgroundView.backgroundColor = UIColor(red: 1, green: 1, blue:1, alpha:1)
+        //rightUp1
+        let rightUp1 = CGRect(x:crossBackgroundView.frame.width/22*9, y:0, width:crossBackgroundView.frame.width/22*12, height:crossBackgroundView.frame.height/16*7)
+        let rightUp1BackgroundView = UIView(frame:rightUp1)
+        rightUp1BackgroundView.backgroundColor = UIColor(red: 1, green: 1, blue:1, alpha:1)
+        //rightDown1
+        let rightDown1 = CGRect(x:crossBackgroundView.frame.width/22*9, y:crossBackgroundView.frame.height/16*9, width:crossBackgroundView.frame.width/22*12, height:crossBackgroundView.frame.height/16*7)
+        let rightDown1BackgroundView = UIView(frame:rightDown1)
+        rightDown1BackgroundView.backgroundColor = UIColor(red: 1, green: 1, blue:1, alpha:1)
+        
+        //leftUp
+        let leftUp = CGRect(x:0, y:0, width:crossBackgroundView.frame.width/11*3, height:crossBackgroundView.frame.height/8*3)
         let leftUpBackgroundView = UIView(frame:leftUp)
         leftUpBackgroundView.backgroundColor = UIColor(red: CGFloat(redSlider.value), green: CGFloat(greenSlider.value), blue:CGFloat(blueSlider.value), alpha: 1)
-        let leftDown = CGRect(x:0, y:(crossBackgroundView.frame.height)/5*3+5, width:33, height:21)
+        //leftDown
+        let leftDown = CGRect(x:0, y:crossBackgroundView.frame.height/8*5, width:crossBackgroundView.frame.width/11*3, height:crossBackgroundView.frame.height/8*3)
         let leftDownBackgroundView = UIView(frame:leftDown)
         leftDownBackgroundView.backgroundColor = UIColor(red: CGFloat(redSlider.value), green: CGFloat(greenSlider.value), blue:CGFloat(blueSlider.value), alpha: 1)
-        let rightUp = CGRect(x:(crossBackgroundView.frame.width)-36, y:0, width:33, height:21)
+        //rightUp
+        let rightUp = CGRect(x:crossBackgroundView.frame.width/11*5, y:0, width:crossBackgroundView.frame.width/11*6, height:crossBackgroundView.frame.height/8*3)
         let rightUpBackgroundView = UIView(frame:rightUp)
         rightUpBackgroundView.backgroundColor = UIColor(red: CGFloat(redSlider.value), green: CGFloat(greenSlider.value), blue:CGFloat(blueSlider.value), alpha: 1)
-        let rightDown = CGRect(x:(crossBackgroundView.frame.width)-36, y:(crossBackgroundView.frame.height)/5*3+5, width:33, height:21)
+       //rightDown
+        let rightDown = CGRect(x:crossBackgroundView.frame.width/11*5, y:crossBackgroundView.frame.height/8*5, width:crossBackgroundView.frame.width/11*6, height:crossBackgroundView.frame.height/8*3)
         let rightDownBackgroundView = UIView(frame:rightDown)
         rightDownBackgroundView.backgroundColor = UIColor(red: CGFloat(redSlider.value), green: CGFloat(greenSlider.value), blue:CGFloat(blueSlider.value), alpha: 1)
+        
+        
+         patternImageView.addSubview(crossBackgroundView)
+        crossBackgroundView.addSubview(leftUp1BackgroundView)
+        crossBackgroundView.addSubview(leftDown1BackgroundView)
+        crossBackgroundView.addSubview(rightUp1BackgroundView)
+        crossBackgroundView.addSubview(rightDown1BackgroundView)
+        
+        leftUp1BackgroundView.addSubview(leftUpBackgroundView)
+        leftDown1BackgroundView.addSubview(leftDownBackgroundView)
+        rightUp1BackgroundView.addSubview(rightUpBackgroundView)
+        rightDown1BackgroundView.addSubview(rightDownBackgroundView)
         
         crossBackgroundView.addSubview(leftUpBackgroundView)
         crossBackgroundView.addSubview(leftDownBackgroundView)
         crossBackgroundView.addSubview(rightUpBackgroundView)
         crossBackgroundView.addSubview(rightDownBackgroundView)
-        patternImageView.addSubview(crossBackgroundView)
+        
+       
+        
+       
         
             donnaImageView.backgroundColor = UIColor(red: CGFloat(redSlider.value), green: CGFloat(greenSlider.value), blue: CGFloat(blueSlider.value), alpha: 0)
         
